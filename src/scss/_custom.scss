@@ -1,0 +1,134 @@
+.tab-switchboard {
+  .active {
+    button {
+      @extend .btn-info;
+    }
+  }
+}
+
+.spinner-border-reset {
+  position: absolute;
+  z-index: 1;
+  right:0;
+}
+
+.filter__link {
+  color: #20a8d8;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+}
+
+/* Subscription Section */
+
+.subsSearch {
+  .react-datepicker-wrapper {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+  }
+
+   input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+.react-datepicker__input-container {
+
+  input {
+    @extend .form-control;
+  }
+}
+
+
+/* Services tips */
+
+.domain__tooltip {
+  cursor: pointer;
+
+  .icon-info {
+    width: 30px;
+    margin-left: 15px;
+  }
+}
+
+/* Tooltip container */
+.tip {
+  position: relative;
+  display: inline-block;
+}
+
+.__react_component_tooltip {
+  max-width: 500px !important;
+}
+
+.error-message {
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #f86c6b;
+}
+
+.global-alert {
+  position: fixed;
+  bottom: 0;
+  z-index: 10000;
+  animation: 0.5s forwards global-alert;
+}
+
+@keyframes global-alert {
+  from {
+    left: -1000px;
+  }
+
+  to {
+    left: 1rem;
+  }
+}
+
+.slide-out {
+  animation: 1s backwards slide-out;
+}
+
+@keyframes slide-out {
+  from {
+    left: 1rem;
+  }
+
+  to {
+    left: -1000px;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.url__link {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+@media (max-width: 760px) {
+  .app-header .navbar-brand {
+    left:30%;
+  }
+}
+
+// Form toggle buttons
+.darker-active {
+  background-color: #125b75 !important;
+  border-color: #125b75 !important;
+}
+
+.search-by-month__container {
+  @media (min-width:575px){
+     text-align: right ;
+  }
+}
+
+
+
